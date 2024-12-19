@@ -1,0 +1,183 @@
+/* General body and container styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+
+.container {
+  margin-top: 20px;
+}
+
+/* Nav styles */
+.nav {
+  margin-bottom: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+  color: #61dafb;
+}
+
+/* Header section */
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 50px;
+  color: #333;
+}
+
+/* Styling for the background and text */
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+/* Form Components Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #61dafb;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #61dafb;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4fa3f7;
+}
+
+/* Adjusting the layout for different sections */
+.row {
+  margin-bottom: 20px;
+}
+
+/* Table for displaying data */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #343a40;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Add spacing and adjust layout for different screen sizes */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item .nav-link {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
